@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rubik's Cube</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Headers -->
+  <header>
+    <img src="https://media.licdn.com/dms/image/v2/C4E0BAQGyLMaHvAzXKQ/company-logo_200_200/company-logo_200_200/0/1630648655310/educase_india_logo?e=1756339200&v=beta&t=NshHzGIAX164tyocvEOcQ2f4eGJs0VMmG_oZg3zs4bc"
+         alt="Educase India Logo"
+         id="logo" />
+    <h1>Rubik's Cube</h1>
+  </header>
+
+  <!-- Buttons -->
+  <div class="button-group">
+    <button onclick="cube.rotate('U', true)">Rotate U Clockwise</button>
+    <button onclick="cube.rotate('U', false)">Rotate U Counter</button>
+
+    <button onclick="cube.rotate('F', true)">Rotate F Clockwise</button>
+    <button onclick="cube.rotate('F', false)">Rotate F Counter</button>
+
+    <button onclick="cube.scramble()">Scramble Cube</button>
+    <button onclick="cube.solve()">Solve Cube</button>
+    <button onclick="cube.reset()">Reset Cube</button>
+    <button onclick="cube.display()">Show Cube</button>
+  </div>
+
+  <!-- Display unit -->
+  <pre id="cubeDisplay"></pre>
+
+  <!-- Footer unit -->
+  <footer>
+    <p>Rubik's Cube Solver Project | Built with ❤️ by Gyanapriya Pradhan</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
